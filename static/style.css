@@ -1,99 +1,196 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
+body { 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #007BFF;
-    padding: 10px 20px;
-    color: white;
-}
-
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
-nav .cta-button {
-    background: white;
-    color: #007BFF;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-#hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f4f4f4;
-}
-
-#hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.primary-button, .secondary-button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.primary-button {
-    background: #007BFF;
-    color: white;
-}
-
-.secondary-button {
-    background: white;
-    color: #007BFF;
-    border: 1px solid #007BFF;
-}
-
-#features, #pricing {
-    padding: 30px 20px;
-}
-
-.features-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.feature {
-    width: 20%;
-    padding: 10px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.pricing-plans {
-    display: flex;
-    justify-content: space-around;
-}
-
-.plan {
-    width: 25%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-}
+     font-family: Arial, sans-serif; 
+    
+     margin: 0; 
+    
+     padding: 0; 
+    
+     line-height: 1.6; 
+    
+     color: #333; 
+    
+    } 
+    
+     
+    
+    header { 
+    
+     display: flex; 
+    
+     justify-content: space-between; 
+    
+     align-items: center; 
+    
+     background: #007BFF; 
+    
+     padding: 10px 20px; 
+    
+     color: white; 
+    
+    } 
+    
+     
+    
+    header .logo { 
+    
+     font-size: 1.5em; 
+    
+     font-weight: bold; 
+    
+    } 
+    
+     
+    
+    nav a { 
+    
+     margin: 0 10px; 
+    
+     color: white; 
+    
+     text-decoration: none; 
+    
+    } 
+    
+     
+    
+    nav .cta-button { 
+    
+     background: white; 
+    
+     color: #007BFF; 
+    
+     border: none; 
+    
+     padding: 10px 15px; 
+    
+     cursor: pointer; 
+    
+    } 
+    
+     
+    
+    #hero { 
+    
+     text-align: center; 
+    
+     padding: 50px 20px; 
+    
+     background: #f4f4f4; 
+    
+    } 
+    
+     
+    
+    #hero h1 { 
+    
+     font-size: 2.5em; 
+    
+     margin-bottom: 10px; 
+    
+    } 
+    
+     
+    
+    .primary-button, .secondary-button { 
+    
+     margin: 10px; 
+    
+     padding: 10px 20px; 
+    
+     border: none; 
+    
+     cursor: pointer; 
+    
+    } 
+    
+     
+    
+    .primary-button { 
+    
+     background: #007BFF; 
+    
+     color: white; 
+    
+    } 
+    
+     
+    
+    .secondary-button { 
+    
+     background: white; 
+    
+     color: #007BFF; 
+    
+     border: 1px solid #007BFF; 
+    
+    } 
+    
+     
+    
+    #features, #pricing { 
+    
+     padding: 30px 20px; 
+    
+    } 
+    
+     
+    
+    .features-list { 
+    
+     display: flex; 
+    
+     justify-content: space-around; 
+    
+    } 
+    
+     
+    
+    .feature { 
+    
+     width: 20%; 
+    
+     padding: 10px; 
+    
+     background: #f9f9f9; 
+    
+     text-align: center; 
+    
+    } 
+    
+     
+    
+    .pricing-plans { 
+    
+     display: flex; 
+    
+     justify-content: space-around; 
+    
+    } 
+    
+     
+    
+    .plan { 
+    
+     width: 25%; 
+    
+     padding: 20px; 
+    
+     border: 1px solid #ddd; 
+    
+     text-align: center; 
+    
+    } 
+    
+     
+    
+    footer { 
+    text-align: center; 
+    
+     padding: 20px; 
+    
+     background: #333; 
+    
+     color: white; 
+    
+    } 

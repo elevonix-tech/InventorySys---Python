@@ -1,0 +1,59 @@
+{% extends "base.html" %} 
+
+{% block content %} 
+
+<h2>Dashboard</h2> 
+
+<form action="/add_item" method="POST"> 
+
+  <input type="text" name="item_name" placeholder="Item Name" required> 
+
+  <input type="number" name="quantity" placeholder="Quantity" required> 
+
+  <input type="number" name="low_stock_level" placeholder="Low Stock Level" required> 
+
+  <button type="submit">Add Item</button> 
+
+</form> 
+
+<table> 
+
+  <tr> 
+
+    <th>Item Name</th> 
+
+    <th>Quantity</th> 
+
+    <th>Low Stock Level</th> 
+
+    <th>Actions</th> 
+
+  </tr> 
+
+  {% for item in inventory %} 
+
+  <tr> 
+
+    <td>{{ item[1] }}</td> 
+
+    <td>{{ item[2] }}</td> 
+
+    <td>{{ item[3] }}</td> 
+
+    <td> 
+
+      <form action="/delete_item/{{ item[0] }}" method="POST"> 
+
+        <button type="submit">Delete</button> 
+
+      </form> 
+
+    </td> 
+
+  </tr> 
+
+  {% endfor %} 
+
+</table> 
+
+{% endblock %}

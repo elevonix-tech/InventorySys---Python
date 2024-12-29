@@ -1,9 +1,58 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
-{% block content %} 
+{% block content %}
 
-<h2>Welcome to the Inventory System</h2> 
+<section id="hero">
+    <h1>Effortless Inventory Management for Restaurants</h1>
+    <p>Track, manage, and optimize your inventory in real-time.</p>
+    <button class="primary-button">Start Free Trial</button>
+    <button class="secondary-button">Learn More</button>
+</section>
 
-<p>Track, manage, and optimize your inventory in real-time.</p> 
+<section id="features">
+    <h2>Why Choose Our System?</h2>
+    <div class="features-list">
+        <div class="feature">Real-Time Inventory Tracking</div>
+        <div class="feature">Low-Stock Alerts</div>
+        <div class="feature">Customizable Categories</div>
+        <div class="feature">Reports and Analytics</div>
+    </div>
+</section>
 
-{% endblock %} 
+<section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-plans">
+        <div class="plan">
+            <h3>Basic</h3>
+            <p>$10/month</p>
+            <ul>
+                <li>Track Inventory</li>
+                <li>Low-Stock Alerts</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+        <div class="plan">
+            <h3>Pro</h3>
+            <p>$25/month</p>
+            <ul>
+                <li>All Basic Features</li>
+                <li>Advanced Analytics</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+        <div class="plan">
+            <h3>Enterprise</h3>
+            <p>$50/month</p>
+            <ul>
+                <li>All Pro Features</li>
+                <li>Team Access</li>
+            </ul>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 InventorySys. All rights reserved.</p>
+</footer>
+{% endblock %}

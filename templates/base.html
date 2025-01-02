@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="/static/style.css"> 
 
-  <title>Inventory System</title> 
+  <title>Inventory Management System</title> 
 
 </head> 
 
@@ -24,11 +24,17 @@
 
       <a href="/">Home</a> 
 
-      <a href="/dashboard">Dashboard</a> 
+      {% if session['username'] %} 
 
-      <a href="/reports">Reports</a> 
+        <a href="/dashboard">Dashboard</a> 
 
-      <a href="/login">Login</a> 
+        <a href="/logout">Logout</a> 
+
+      {% else %} 
+
+        <a href="/login">Login</a> 
+
+      {% endif %} 
 
     </nav> 
 

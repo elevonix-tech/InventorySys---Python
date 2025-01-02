@@ -4,56 +4,40 @@
 
 <h2>Dashboard</h2> 
 
-<form action="/add_item" method="POST"> 
+<form action="/dashboard" method="POST"> 
 
-  <input type="text" name="item_name" placeholder="Item Name" required> 
+  <h3>Square API</h3> 
 
-  <input type="number" name="quantity" placeholder="Quantity" required> 
+  <input type="text" name="square_public_key" placeholder="Square Public Key"> 
 
-  <input type="number" name="low_stock_level" placeholder="Low Stock Level" required> 
+  <input type="text" name="square_secret_key" placeholder="Square Secret Key"> 
 
-  <button type="submit">Add Item</button> 
+  
+
+  <h3>PayPal API</h3> 
+
+  <input type="text" name="paypal_client_id" placeholder="PayPal Client ID"> 
+
+  <input type="text" name="paypal_secret_key" placeholder="PayPal Secret Key"> 
+
+  
+
+  <h3>Stripe API</h3> 
+
+  <input type="text" name="stripe_publishable_key" placeholder="Stripe Publishable Key"> 
+
+  <input type="text" name="stripe_secret_key" placeholder="Stripe Secret Key"> 
+
+  
+
+  <h3>Escrow.com API</h3> 
+
+  <input type="text" name="escrow_api_key" placeholder="Escrow API Key"> 
+
+  
+
+  <button type="submit">Save API Keys</button> 
 
 </form> 
 
-<table> 
-
-  <tr> 
-
-    <th>Item Name</th> 
-
-    <th>Quantity</th> 
-
-    <th>Low Stock Level</th> 
-
-    <th>Actions</th> 
-
-  </tr> 
-
-  {% for item in inventory %} 
-
-  <tr> 
-
-    <td>{{ item[1] }}</td> 
-
-    <td>{{ item[2] }}</td> 
-
-    <td>{{ item[3] }}</td> 
-
-    <td> 
-
-      <form action="/delete_item/{{ item[0] }}" method="POST"> 
-
-        <button type="submit">Delete</button> 
-
-      </form> 
-
-    </td> 
-
-  </tr> 
-
-  {% endfor %} 
-
-</table> 
-
-{% endblock %}
+{% endblock %} 
